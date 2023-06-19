@@ -3,6 +3,7 @@ import './App.css'
 import { useState } from 'react'
 
 import reactLogo from './assets/react.svg'
+import { ProductsList } from './component/Products'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <div>
+        <ProductsList products={['bread', 'milk']} />
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
